@@ -1,0 +1,49 @@
+{
+  "Main" : {
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "title",
+        "placeholder" : "title"
+      }
+    },
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "id",
+        "placeholder" : "id"
+      }
+    },
+    "maintitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "maintitle",
+        "placeholder" : "maintitle"
+      }
+    },
+    "subcontent" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "subcontent",
+        "placeholder" : "subcontent"
+      }
+    },
+    "curve_link" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "curve link",
+        "placeholder" : "curve link"
+      }
+    },
+    "arrow_icon_link" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "arrow icon link",
+        "placeholder" : "arrow icon link"
+      }
+    }
+  }
+}
