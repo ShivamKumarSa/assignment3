@@ -29,11 +29,13 @@ export default function MyPortfolioCards(){
                     </div>
                     <div style={{paddingLeft:'1rem'}}>
                         <Typography variant='body1' >{items.data.heading.text}</Typography>
-                        <svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d={items.data.arrow_icon_link.text} fill="#B5B5B5"/>
-                        </svg>
-                        <span style={{fontSize:'1.25rem',fontFamily:'Mulish',fontWeight:'600',color:'#B5B5B5'}}>
-                            {items.data.subheading.text}</span> 
+                        <Box sx={{display:'flex',alignItems:'center'}}>
+                            <svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d={items.data.arrow_icon_link.text} fill="#B5B5B5"/>
+                            </svg>
+                            <span style={{fontSize:'1.25rem',fontFamily:'Mulish',fontWeight:'600',color:'#B5B5B5'}}>
+                                {items.data.subheading.text}</span> 
+                        </Box>
                     </div>
                 </Box>
             </Card>

@@ -25,14 +25,16 @@ export default function NftsOwnedCards(){
     return (
         <> 
             {query.allPrismicNftsOwnedCard.nodes.map((items:any)=>(    
-                <Card key={items.uid}  sx={{ width:'100%',backgroundColor:'white',borderRadius:'10px',padding:'.5rem',marginTop:'.9rem' }} elevation={0}>
+                <Card key={items.uid}  sx={{ width:'100%',backgroundColor:'white',borderRadius:'10px',padding:'.5rem',marginTop:'1.2rem' }} elevation={0}>
                     <Box sx={{display:'flex',justifyContent:'space-between'}}>
                         <div>
                             <Typography variant='body2' >{items.data.title.text}</Typography>
-                            <svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d={items.data.arrow_icon_link} fill= "#272727"/>
-                            </svg>
-                            <span style={{fontSize:'1.3rem',fontFamily:'Mulish',fontWeight:'bold'}}>{items.data.maintitle.text}</span>   
+                            <Box sx={{display:'flex',alignItems:'center'}}>
+                                <svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d={items.data.arrow_icon_link} fill= "#272727"/>
+                                </svg>
+                                <span style={{fontSize:'1.3rem',fontFamily:'Mulish',fontWeight:'bold'}}>{items.data.maintitle.text}</span>   
+                            </Box>
                         </div>
                         <div>
                             <svg width="40" height="20" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">

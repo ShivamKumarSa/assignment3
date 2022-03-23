@@ -6,10 +6,7 @@ const SeconDark = '#5C5C5C';
 const primLight = '#fff';
 const primMain = '#959595';
 const primDark = '#272727';
-const fontSize = 14; // px
 
-const htmlFontSize = 16;
-const coef = fontSize / 14;
 const theme = createTheme({
     palette:{
         ...palette,

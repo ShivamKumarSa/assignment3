@@ -3,18 +3,18 @@ import "@fontsource/raleway";
 import "@fontsource/mulish";
 import SideBAR from "../components/SideBAR"
 import Header from "../components/Header"
-import Aside from "../components/aside";
+import Aside from "../components/Aside";
 import MainPart1a from "./MainPart1a";
 import MainPart1b from "./MainPart1b";
 import MainPart2a from "./MainPart2a";
 import MainPart2b from "./MainPart2b";
-import { Box, Grid } from "@mui/material";
+import { Box} from "@mui/material";
 
 export default function App(){
     return (
         <div>
             <Box sx={{display: 'flex',height:'100vh'}}>
-                <Box sx={{flex:'6vw',borderRight:'2px solid #F5F3FB',display:'flex',justifyContent:'space-between',flexDirection:'column',height:'100%'}}>
+                <Box sx={{flex:'6vw',borderRight:'2px solid #F5F3FB',display:'flex',justifyContent:'space-between',flexDirection:'column',height:'105%'}}>
                     <SideBAR/>
                 </Box>
                 <Box sx={{flex:'94vw',display:'flex',flexDirection:'column'}}>  
